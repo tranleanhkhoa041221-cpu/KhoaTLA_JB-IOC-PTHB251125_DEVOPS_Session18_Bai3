@@ -1,0 +1,20 @@
+spring:
+    application:
+        name: DEVOPS-Session16-Bai1
+
+#    profiles:
+#      active: prod
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # Đã bổ sung 'loggers' vào danh sách exposed endpoints
+        include: health,info,loggers
+
+
+
+
